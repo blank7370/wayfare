@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Destination — Wayfare</title>
+<meta name="description" content="A Wayfare departure — fixed dates, a capped group, and photos from the route." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<header class="site-head" id="top">
+  <a class="brand" href="index.html" aria-label="Wayfare home">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 2 14.4 9.2 22 12 14.4 14.8 12 22 9.6 14.8 2 12 9.6 9.2Z" fill="currentColor"/></svg>
+    </span>
+    <span class="brand__word">WAYFARE</span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="index.html#departures">Departures</a>
+    <a href="index.html#why">Why we cap</a>
+    <a href="index.html#how">How it works</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a class="btn btn--ghost head-cta" href="index.html#departures">All departures</a>
+</header>
+
+<main class="detail" id="trip-root">
+  <!-- rendered by destination.js -->
+</main>
+
+<footer class="site-foot">
+  <div class="foot__top">
+    <div class="brand brand--foot">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2 14.4 9.2 22 12 14.4 14.8 12 22 9.6 14.8 2 12 9.6 9.2Z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand__word">WAYFARE</span>
+    </div>
+    <nav class="foot__links" aria-label="Footer">
+      <a href="index.html#departures">Departures</a>
+      <a href="index.html#why">Why we cap</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="foot__bottom">
+    <p>&copy; <span id="year"></span> Wayfare Collective. Booked by the seat, limited by design.</p>
+    <p class="foot__fine">Seat counts are illustrative. Wire to your booking backend before launch.</p>
+  </div>
+</footer>
+
+<!-- booking modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal__scrim" data-close></div>
+  <div class="modal__panel" role="document">
+    <button class="modal__x" data-close aria-label="Close">&times;</button>
+    <div class="modal__body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <div class="lightbox__scrim" data-close></div>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">&lsaquo;</button>
+  <figure class="lightbox__fig">
+    <img id="lb-img" alt="" />
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">&rsaquo;</button>
+  <button class="lightbox__x" data-close aria-label="Close">&times;</button>
+</div>
+
+<!-- toasts -->
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="booking.js"></script>
+<script src="destination.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
