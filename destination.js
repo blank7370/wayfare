@@ -1,9 +1,9 @@
 /* =========================================================
-   WAYFARE — destination.js  (detail page)
+   RESERVED ROUTE — destination.js  (detail page)
    Reads ?trip=<id>, renders the trip + a photo gallery.
    ========================================================= */
 (function(){
-  const W = window.WAYFARE;
+  const W = window.RESERVED_ROUTE;
   const { statusOf, pctTaken, money, regionGradient } = W;
   const reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
 
@@ -20,7 +20,7 @@
     return;
   }
 
-  document.title = `${t.name} — Wayfare`;
+  document.title = `${t.name} — Reserved Route`;
 
   function availBlock(){
     const st = statusOf(t);

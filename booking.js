@@ -1,12 +1,12 @@
 /* =========================================================
-   WAYFARE — booking.js  (shared modal + toasts)
+   RESERVED ROUTE — booking.js  (shared modal + toasts)
    Requires #modal, #modal-body, #toasts in the page.
    After a reservation it calls window.refreshTrip(id) if the
    page defines one, so each page can update its own UI.
    ========================================================= */
 (function(){
-  const { statusOf, money } = window.WAYFARE;
-  const W = window.WAYFARE;
+  const { statusOf, money } = window.RESERVED_ROUTE;
+  const W = window.RESERVED_ROUTE;
 
   /* ---- EmailJS config — fill these in after EmailJS setup ---- */
   const EJ = {

@@ -1,4 +1,4 @@
-# Wayfare — small-group travel site
+# Reserved Route — small-group travel site
 
 A static marketing + booking-front site for a fictional travel house that sells
 **bundled, fixed-date trips with a hard seat cap**. Live availability is the core

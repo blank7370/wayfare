@@ -1,8 +1,8 @@
 /* =========================================================
-   WAYFARE — app.js  (home page)
+   RESERVED ROUTE — app.js  (home page)
    ========================================================= */
 (function(){
-  const W = window.WAYFARE;
+  const W = window.RESERVED_ROUTE;
   const { TRIPS, statusOf, pctTaken, money, regionGradient } = W;
   const reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
 

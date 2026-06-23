@@ -1,5 +1,5 @@
 /* =========================================================
-   WAYFARE — data.js  (shared by index + destination pages)
+   RESERVED ROUTE — data.js  (shared by index + destination pages)
    Trip data, photo galleries, and availability helpers.
    ========================================================= */
 
@@ -30,10 +30,10 @@ const TRIPS = [
     id:"andean", name:"The Andean Traverse", region:"Americas", where:"Peru · Bolivia",
     blurb:"Cusco markets to the white silence of the Uyuni salt flat, overland the whole way.",
     days:12, date:"14 Sep 2026", coord:"13.5°S / 71.9°W", price:4380, total:14, left:2,
-    long:"Twelve days that climb from the cobbled streets of Cusco, through the terraced Sacred Valley, up to Machu Picchu at first light — then south across the altiplano to the mirror-flat expanse of Salar de Uyuni. You travel overland the whole way, so the landscape changes by the hour instead of by the flight.",
+    long:"Twelve days that climb from the cobbled streets of Cusco, through the terraced Sacred Valley, up to Machu Picchu at first light then south across the altiplano to the mirror-flat expanse of Salar de Uyuni. You travel overland the whole way, so the landscape changes by the hour instead of by the flight.",
     highlights:["Sunrise at Machu Picchu before the day crowds arrive","A night on the Uyuni salt flat under a sky with no horizon","Markets and ruins through the Sacred Valley with a resident guide"],
     stops:[
-      ["Cusco","Two days acclimatising in the old Inca capital — markets, ruins, and the best coffee in the Andes."],
+      ["Cusco","Two days acclimatising in the old Inca capital markets, ruins, and the best coffee in the Andes."],
       ["Sacred Valley","Terraces, salt pans, and Ollantaytambo on the slow road toward the mountain."],
       ["Machu Picchu","In at dawn by the early train, ahead of the buses."],
       ["Salar de Uyuni","Across the border into Bolivia for the salt flat and its impossible reflections."],
@@ -50,13 +50,13 @@ const TRIPS = [
   {
     id:"kyoto", name:"Kyoto to Coast", region:"Asia", where:"Japan",
     blurb:"Temple mornings in Kyoto, then a slow drift through the art islands of the Seto sea.",
-    days:9, date:"02 Apr 2026", coord:"35.0°N / 135.8°E", price:3960, total:12, left:5,
+    days:9, date:"02 Aug 2026", coord:"35.0°N / 135.8°E", price:3960, total:12, left:5,
     long:"A trip in two halves. First the temples, gardens and back lanes of Kyoto in cherry-blossom season, walked early before the gates fill. Then west to the Seto Inland Sea, island-hopping between Naoshima and its neighbours where contemporary art sits in old fishing villages and disused schools.",
     highlights:["Higashiyama lanes and Kiyomizu-dera before breakfast","The vermilion tunnel of Fushimi Inari, walked at dawn","Naoshima's island art museums by bicycle and ferry"],
     stops:[
       ["Kyoto","Four nights for temples, tea houses, and Nishiki market."],
       ["Arashiyama","Bamboo, the monkey park, and the river at the city's edge."],
-      ["Naoshima","Ferry to the art island — Chichu, the pumpkin, and a night in a village inn."],
+      ["Naoshima","Ferry to the art island Chichu, the pumpkin, and a night in a village inn."],
       ["Setouchi","A final drift through the inland sea before flying home from Okayama."],
     ],
     included:["Rail passes & island ferries","8 nights lodging, ryokan to island inns","Resident guide in Kyoto","Museum & garden entries","Daily breakfast, three dinners"],
@@ -72,10 +72,10 @@ const TRIPS = [
     id:"sahara", name:"Saharan Thresholds", region:"Africa", where:"Morocco",
     blurb:"Marrakech, over the High Atlas, and a night where the dunes start at Merzouga.",
     days:8, date:"19 Oct 2026", coord:"31.1°N / 4.0°W", price:2740, total:14, left:9,
-    long:"From the noise and colour of Marrakech, the route climbs over the High Atlas, down through gorges and kasbahs, to the edge of the Sahara at Merzouga. The last leg is by camel into the dunes for a night in a desert camp — dinner under a sky that does not stop.",
+    long:"From the noise and colour of Marrakech, the route climbs over the High Atlas, down through gorges and kasbahs, to the edge of the Sahara at Merzouga. The last leg is by camel into the dunes for a night in a desert camp dinner under a sky that does not stop.",
     highlights:["The souks and rooftops of Marrakech","The Tizi n'Tichka pass over the High Atlas","A night in the Erg Chebbi dunes, reached by camel"],
     stops:[
-      ["Marrakech","Two nights in the medina — souks, gardens, and a rooftop dinner."],
+      ["Marrakech","Two nights in the medina souks, gardens, and a rooftop dinner."],
       ["High Atlas","Over the pass and down to Aït Benhaddou's earthen kasbah."],
       ["Dadès & Todra","Gorges, palm valleys, and the long road east."],
       ["Merzouga","Camels into the dunes for a night under canvas at the desert's edge."],
@@ -92,11 +92,11 @@ const TRIPS = [
   {
     id:"fjord", name:"Fjordline", region:"Europe", where:"Norway",
     blurb:"Bergen's wooden wharf up to Lofoten, chasing light that refuses to set.",
-    days:10, date:"08 Jun 2026", coord:"68.2°N / 14.5°E", price:5120, total:10, left:1,
+    days:10, date:"15 Jul 2026", coord:"68.2°N / 14.5°E", price:5820, total:10, left:2,
     long:"Ten days up the Norwegian coast in the season of the midnight sun. From the painted wharf houses of Bergen, by rail and coastal boat north to the Lofoten archipelago, where red fishing cabins sit under peaks that drop straight into the sea and the light never quite goes out.",
     highlights:["Bergen's Bryggen wharf and the funicular at golden hour","The coastal voyage north past fjord after fjord","Midnight sun over the Lofoten peaks"],
     stops:[
-      ["Bergen","Two nights in the gateway city — wharf, market, and mountain views."],
+      ["Bergen","Two nights in the gateway city wharf, market, and mountain views."],
       ["The coast","North by the famous coastal route, fjords on either side."],
       ["Lofoten","Reine, Hamnøy, and the red rorbu cabins on the water."],
       ["Arctic beaches","White-sand coves under the never-setting sun."],
@@ -114,12 +114,12 @@ const TRIPS = [
     id:"mekong", name:"The Mekong Slow Boat", region:"Asia", where:"Laos · Vietnam",
     blurb:"Two days downriver by wooden boat, then the lantern streets of Hoi An.",
     days:14, date:"11 Nov 2026", coord:"19.9°N / 102.1°E", price:3580, total:12, left:7,
-    long:"Fourteen unhurried days along the spine of the Mekong. A two-day wooden slow-boat carries you downriver to Luang Prabang's temples and almsgiving dawns, then east into Vietnam — the rice terraces, the old port of Hoi An, and its river of lanterns at night.",
+    long:"Fourteen unhurried days along the spine of the Mekong. A two-day wooden slow-boat carries you downriver to Luang Prabang's temples and almsgiving dawns, then east into Vietnam the rice terraces, the old port of Hoi An, and its river of lanterns at night.",
     highlights:["Two days on a wooden slow-boat down the Mekong","Dawn almsgiving and night markets in Luang Prabang","Hoi An's lantern-lit old town on the river"],
     stops:[
       ["Huay Xai","Board the slow-boat at the Lao border for two days downriver."],
       ["Luang Prabang","Temples, waterfalls, and the quiet former royal capital."],
-      ["Hanoi","Across into Vietnam — the old quarter and a night train south."],
+      ["Hanoi","Across into Vietnam the old quarter and a night train south."],
       ["Hoi An","Tailors, rice fields, and lanterns on the Thu Bồn river."],
     ],
     included:["Private slow-boat & internal flights","13 nights lodging, river inns to boutique stays","Resident guides in Laos & Vietnam","All entries & boat trips","Daily breakfast, six dinners"],
@@ -134,12 +134,12 @@ const TRIPS = [
   {
     id:"patagonia", name:"Patagonia Endways", region:"Americas", where:"Chile · Argentina",
     blurb:"Torres del Paine's granite towers, then Fitz Roy across the border at dawn.",
-    days:11, date:"23 Feb 2026", coord:"50.9°S / 73.4°W", price:4690, total:12, left:3,
-    long:"Eleven days at the bottom of the world. The W trek through Torres del Paine — towers, glaciers, and teal lakes — then across the Argentine border to El Chaltén, the small town beneath the spires of Fitz Roy, walked in the long southern light.",
+    days:11, date:"23 Jan 2027", coord:"50.9°S / 73.4°W", price:4690, total:12, left:3,
+    long:"Eleven days at the bottom of the world. The W trek through Torres del Paine towers, glaciers, and teal lakes then across the Argentine border to El Chaltén, the small town beneath the spires of Fitz Roy, walked in the long southern light.",
     highlights:["The full W route through Torres del Paine","Grey Glacier and the milky lakes beneath it","Fitz Roy at sunrise from Laguna de los Tres"],
     stops:[
       ["Puerto Natales","The fjord town where the trek begins."],
-      ["Torres del Paine","Four days on the W — towers, French Valley, Grey Glacier."],
+      ["Torres del Paine","Four days on the W towers, French Valley, Grey Glacier."],
       ["El Calafate","Across the border, with a day at the Perito Moreno glacier."],
       ["El Chaltén","Trails beneath Fitz Roy and Cerro Torre to finish."],
     ],
@@ -155,11 +155,11 @@ const TRIPS = [
   {
     id:"cyclades", name:"Cyclades Hop", region:"Europe", where:"Greece",
     blurb:"Five islands by ferry, away from the cruise crowds, on a hand-picked route.",
-    days:7, date:"15 May 2026", coord:"37.0°N / 25.3°E", price:2980, total:16, left:11,
-    long:"A week of ferries and whitewashed lanes through the Cyclades, on a route chosen to skip the cruise-ship islands at their busiest. Quiet harbours, hill villages, swimming coves, and a caldera sunset to end — moving at the pace of the boats.",
+    days:7, date:"15 Oct 2026", coord:"37.0°N / 25.3°E", price:3980, total:16, left:11,
+    long:"A week of ferries and whitewashed lanes through the Cyclades, on a route chosen to skip the cruise-ship islands at their busiest. Quiet harbours, hill villages, swimming coves, and a caldera sunset to end moving at the pace of the boats.",
     highlights:["Five islands linked by local ferry, not a cruise","Hill villages and swimming coves off the tourist track","The caldera sunset from Oia on the last night"],
     stops:[
-      ["Naxos","The largest Cycladic island — beaches, a marble quarry, mountain villages."],
+      ["Naxos","The largest Cycladic island beaches, a marble quarry, mountain villages."],
       ["Small Cyclades","A night on a quiet island most ferries skip."],
       ["Milos","Volcanic coves and the lunar shore at Sarakiniko."],
       ["Santorini","The caldera and Oia for the final sunset."],
@@ -176,8 +176,8 @@ const TRIPS = [
   {
     id:"rift", name:"Rift Valley Crossing", region:"Africa", where:"Tanzania",
     blurb:"The Serengeti's open plains down into the green bowl of Ngorongoro crater.",
-    days:9, date:"05 Jul 2026", coord:"2.3°S / 34.8°E", price:6240, total:8, left:2,
-    long:"Nine days across northern Tanzania in the season of the great migration. Game drives through the endless Serengeti plains, nights in tented camps that move with the herds, and a descent into the Ngorongoro crater — a collapsed volcano holding its own contained world of wildlife.",
+    days:9, date:"08 Sep 2026", coord:"2.3°S / 34.8°E", price:6940, total:8, left:2,
+    long:"Nine days across northern Tanzania in the season of the great migration. Game drives through the endless Serengeti plains, nights in tented camps that move with the herds, and a descent into the Ngorongoro crater a collapsed volcano holding its own contained world of wildlife.",
     highlights:["The great migration across the Serengeti plains","Descending into the Ngorongoro crater for a full day","Tented camps under the stars, capped at eight guests"],
     stops:[
       ["Tarangire","Baobabs and elephant herds to begin."],
@@ -198,12 +198,12 @@ const TRIPS = [
     id:"highlands", name:"Highlands & Isles", region:"Europe", where:"Scotland",
     blurb:"Glencoe, the road to Skye, and a sleeper-train morning into the far north.",
     days:6, date:"21 Aug 2026", coord:"57.3°N / 6.2°W", price:2460, total:14, left:14,
-    long:"Six days through the Scottish Highlands and over to Skye. Glens and lochs, a ruined castle or two, the dramatic road to the Isle of Skye, and a leg by the West Highland line — one of the great rail journeys — through country that empties out the further north you go.",
+    long:"Six days through the Scottish Highlands and over to Skye. Glens and lochs, a ruined castle or two, the dramatic road to the Isle of Skye, and a leg by the West Highland line one of the great rail journeys through country that empties out the further north you go.",
     highlights:["Glencoe's valley and the West Highland railway","The Quiraing and Old Man of Storr on Skye","Castles, lochs, and a whisky stop on the way north"],
     stops:[
       ["Glencoe","Into the Highlands through its most famous glen."],
       ["Fort William","Beneath Ben Nevis, with the Jacobite steam line nearby."],
-      ["Isle of Skye","Two nights — the Quiraing, Storr, and fairy pools."],
+      ["Isle of Skye","Two nights the Quiraing, Storr, and fairy pools."],
       ["Inverness","Loch Ness on the way to a final Highland night."],
     ],
     included:["Rail legs & private coach","5 nights lodging, inns to a Skye guesthouse","Resident guide","Castle & distillery entries","Daily breakfast, three dinners"],
@@ -219,7 +219,7 @@ const TRIPS = [
     id:"lycian", name:"Cappadocia & the Lycian Way", region:"Asia", where:"Turkey",
     blurb:"Balloons over the fairy chimneys, then coastal walking above the turquoise sea.",
     days:10, date:"28 Sep 2026", coord:"38.6°N / 34.8°E", price:3140, total:12, left:6,
-    long:"Ten days across two of Turkey's most distinct landscapes. First the surreal rock valleys of Cappadocia — cave villages, underground cities, and a dawn balloon flight over the fairy chimneys. Then south to the coast for sections of the Lycian Way, walking cliff paths above the turquoise sea.",
+    long:"Ten days across two of Turkey's most distinct landscapes. First the surreal rock valleys of Cappadocia cave villages, underground cities, and a dawn balloon flight over the fairy chimneys. Then south to the coast for sections of the Lycian Way, walking cliff paths above the turquoise sea.",
     highlights:["A dawn balloon flight over Cappadocia's fairy chimneys","Cave villages and underground cities of Göreme","Cliff-path sections of the Lycian Way above the coast"],
     stops:[
       ["Göreme","Cave hotels, rock churches, and the balloon launch at dawn."],
@@ -239,8 +239,8 @@ const TRIPS = [
   {
     id:"faroe", name:"The Faroe Edges", region:"Europe", where:"Faroe Islands",
     blurb:"Cliff villages, sea stacks, and weather that changes its mind by the hour.",
-    days:7, date:"03 Jun 2026", coord:"62.0°N / 6.8°W", price:3890, total:10, left:0,
-    long:"Seven days around the eighteen islands of the Faroes — grass-roofed villages, waterfalls that fall straight into the sea, and the cliff-top lake at Sørvágsvatn that seems to hang above the ocean. A small, weather-driven trip for people who like their landscapes raw.",
+    days:7, date:"03 Jul 2026", coord:"62.0°N / 6.8°W", price:3890, total:10, left:0,
+    long:"Seven days around the eighteen islands of the Faroes grass-roofed villages, waterfalls that fall straight into the sea, and the cliff-top lake at Sørvágsvatn that seems to hang above the ocean. A small, weather-driven trip for people who like their landscapes raw.",
     highlights:["The Múlafossur waterfall dropping off a cliff into the sea","Sørvágsvatn, the lake that floats above the ocean","Grass-roofed villages and the puffin cliffs of Mykines"],
     stops:[
       ["Tórshavn","The tiny turf-roofed capital as a base."],
@@ -260,8 +260,8 @@ const TRIPS = [
   {
     id:"baja", name:"Baja Whale Road", region:"Americas", where:"Mexico",
     blurb:"Desert to lagoon, where grey whales bring their calves close to the boat.",
-    days:8, date:"09 Mar 2026", coord:"26.0°N / 112.1°W", price:3320, total:12, left:4,
-    long:"Eight days down the Baja peninsula in grey-whale season. Cardón cactus deserts give way to the Pacific lagoons of San Ignacio, where grey whales come to calve — and, famously, surface right beside the small boats. Nights in desert camps and fishing towns between.",
+    days:8, date:"09 Aug 2026", coord:"26.0°N / 112.1°W", price:3320, total:12, left:4,
+    long:"Eight days down the Baja peninsula in grey-whale season. Cardón cactus deserts give way to the Pacific lagoons of San Ignacio, where grey whales come to calve and, famously, surface right beside the small boats. Nights in desert camps and fishing towns between.",
     highlights:["Grey whales and their calves at San Ignacio lagoon","Cardón cactus deserts and Pacific dunes","Nights in low-impact desert and beach camps"],
     stops:[
       ["Loreto","A mission town on the Sea of Cortez to begin."],
@@ -296,4 +296,4 @@ const regionGradient = region => {
 };
 
 /* expose */
-window.WAYFARE = { TRIPS, statusOf, pctTaken, money, tripById, regionGradient, img };
+window.RESERVED_ROUTE = { TRIPS, statusOf, pctTaken, money, tripById, regionGradient, img };
