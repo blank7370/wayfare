@@ -10,10 +10,10 @@
 
   /* ---- EmailJS config — fill these in after EmailJS setup ---- */
   const EJ = {
-    publicKey:  "YOUR_PUBLIC_KEY",   // Account > API Keys
-    serviceId:  "YOUR_SERVICE_ID",   // Email Services tab
-    templateId: "YOUR_TEMPLATE_ID",  // Email Templates tab
-    notifyEmail:"YOUR_COMPANY_EMAIL" // e.g. bookings@yourcompany.com
+    publicKey:  "pR_aBoojR7zuGAzcl",
+    serviceId:  "service_zw3cegc",
+    templateId: "template_8f96lef",
+    notifyEmail:"contact@reservedroute.com"
   };
   emailjs.init({ publicKey: EJ.publicKey });
   /* ------------------------------------------------------------ */
