@@ -169,6 +169,14 @@
   }
 
   /* ---------- SIGNUP ---------- */
+  /* ---- EmailJS config — reuses the same account as booking.js ---- */
+  const EJ_SIGNUP = {
+    serviceId:   "service_zw3cegc",
+    templateId:  "template_d1wrg4v",
+    notifyEmail: "contact@reservedroute.com"
+  };
+  /* ------------------------------------------------------------ */
+
   const signup = document.getElementById("signup");
   signup.addEventListener("submit", e => {
     e.preventDefault();
@@ -177,6 +185,12 @@
     if(!/^\S+@\S+\.\S+$/.test(input.value.trim())){
       msg.style.color = "#c2410c"; msg.textContent = "Enter a valid email so we can reach you."; return;
     }
+
+    emailjs.send(EJ_SIGNUP.serviceId, EJ_SIGNUP.templateId, {
+      to_email:     EJ_SIGNUP.notifyEmail,
+      signup_email: input.value.trim()
+    });
+
     msg.style.color = ""; msg.textContent = "You're on the list. We'll write the moment a seat frees up.";
     input.value = "";
   });
